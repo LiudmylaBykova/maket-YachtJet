@@ -608,6 +608,157 @@ p {
     color: rgba(251, 251, 251, 0.4);
 }
 
+/* ==Modal== */
+.modal-menu {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #0E1823;
+    width: 375px;
+    height: 812px;
+    padding: 16px 20px 40px 20px;
+    border: 1px solid #1B414B;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-logo-wrap {
+    width: 100%;
+    display: flex;
+    position: relative;
+    background-color: #FBFBFB;
+    padding: 12px 20px;
+    border-radius: 8px;
+}
+
+.modal-logo {
+    display: inline-block;
+    color: rgb(27, 65, 75);
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: -0.03em;
+    transition-property: all;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-logo:hover,
+.modal-logo:focus {
+    color: #1B414B;
+    color: #0E1823;
+    transform: scale(1.05);
+}
+
+.modal-close-btn {
+    padding: 0;
+    position: absolute;
+    top: 12px;
+    right: 10px;
+    display: flex;
+    width: 28px;
+    height: 28px;
+    background-color: transparent;
+    border: none;
+}
+
+.modal-close-svg {
+    fill: #1B414B;
+    transition-property: all;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-close-svg:hover,
+.modal-close-svg:focus {
+    fill: #0E1823;
+}
+
+.modal-nav-list {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-bottom: 80px;
+}
+
+.modal-nav-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 15px;
+    width: 66px;
+    height: 40px;
+    font-size: 9px;
+    line-height: 1.3;
+    text-transform: uppercase;
+    border-radius: 8px;
+    color: #FBFBFB;
+    background-color: rgb(27, 65, 75);
+    transition-property: all;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-nav-link-yachts {
+    background-color: rgba(27, 65, 75, 0.5);
+}
+
+.modal-nav-link-reviews {
+    background-color: rgba(27, 65, 75, 0.5);
+}
+
+.modal-nav-link:hover,
+.modal-nav-link:focus {
+    color: #1B414B;
+    background-color: #FBFBFB;
+    transform: scale(1.05);
+}
+
+.modal-socials-list {
+    display: flex;
+    gap: 10px;
+}
+
+.modal-socials-link {
+    width: 24px;
+    height: 24px;
+}
+
+.modal-socials-svg {
+    fill: #FBFBFB;
+    transition-property: all;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-socials-svg:hover,
+.modal-socials-svg:focus {
+    fill: #1B414B;
+    transform: scale(1.2);
+}
+
+
+
+
+
+
+
+
+
 
 /* ============================Tablet================================ */
 @media screen and (min-width: 768px) {
