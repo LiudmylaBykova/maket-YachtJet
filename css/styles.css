@@ -610,31 +610,23 @@ p {
 
 /* ==Modal== */
 .modal-menu {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(1);
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    background-color: #0E1823;
-    width: 375px;
-    height: 812px;
     padding: 16px 20px 40px 20px;
-    border: 1px solid #1B414B;
-    opacity: 1;
-    visibility: visible;
-    pointer-events: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0E1823;
+    transform: translateX(100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.is-hidden {
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+.modal-menu.is-open {
+    transform: translateX(0);
 }
 
 .modal-logo-wrap {
