@@ -40,14 +40,14 @@ p {
 }
 
 .container {
-    max-width: 335px;
+    width: 100%;
     padding: 0 16px;
     margin: 0 auto;
 }
 
 @media screen and (min-width: 375px) {
     .container {
-        /* min-width: 320px; */
+        min-width: 320px;
         max-width: 375px;
         padding: 0 20px;
         margin: 0 auto;
@@ -773,8 +773,9 @@ p {
     background-color: rgb(4, 3, 6);
     border-radius: 24px;
     padding: 20px 10px;
-    width: 335px;
-    height: 485px;
+    max-width: 335px;
+    height: auto;
+    /* min-height: 485px; */
     margin: 0 auto;
 }
 
@@ -1125,7 +1126,7 @@ p {
     /* ==Modal== */
     .rent-form-wrap-modal {
 
-        width: 500px;
+        max-width: 500px;
         height: 565px;
     }
 
