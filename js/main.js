@@ -12,6 +12,7 @@ function onModalCloseBtn() {
   modalClose();
 }
 
+// ------------------------
 function modalOpen() {
   modal.classList.add("is-open");
 }
