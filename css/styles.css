@@ -1190,7 +1190,7 @@ p {
     }
 
     .rent-form-wrap-modal {
-        max-width: 520px;
+        width: 520px;
         height: 565px;
         padding: 30px 20px;
     }
