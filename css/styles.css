@@ -55,7 +55,8 @@ p {
 }
 
 .header-hero-wrap {
-    max-width: 375px;
+    width: 100%;
+    max-width: 425px;
     height: 812px;
     margin: 0 auto;
     background-image: url(../img/hero/hero-mob.jpeg);
@@ -746,6 +747,8 @@ p {
 /* ==Modal== */
 
 .backdrop {
+    display: flex;
+    align-items: center;
     position: fixed;
     top: 0;
     left: 0;
@@ -768,15 +771,27 @@ p {
     pointer-events: auto;
 }
 
+.modal-close-btn {
+    top: 25px;
+}
+
+.modal-close-svg:hover,
+.modal-close-svg:focus {
+    fill: #FBFBFB;
+}
+
 .rent-form-wrap-modal {
     position: relative;
     background-color: rgb(4, 3, 6);
     border-radius: 24px;
-    padding: 20px 10px;
+    padding: 25px 15px;
     max-width: 335px;
     height: auto;
-    /* min-height: 485px; */
     margin: 0 auto;
+}
+
+.modal-rent-title {
+    font-size: 24px;
 }
 
 .modal-rent-form {
@@ -1128,10 +1143,19 @@ p {
     }
 
     /* ==Modal== */
-    .rent-form-wrap-modal {
 
-        max-width: 500px;
+    .modal-close-btn {
+        top: 30px;
+    }
+
+    .rent-form-wrap-modal {
+        max-width: 520px;
         height: 565px;
+        padding: 30px 20px;
+    }
+
+    .modal-rent-title {
+        font-size: 32px;
     }
 
 }
@@ -1347,10 +1371,5 @@ p {
         margin-bottom: 96px;
     }
 
-    /* ==Modal== */
-    .rent-form-wrap-modal {
-        width: 500px;
-        height: 565px;
-    }
 
 }
