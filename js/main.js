@@ -29,16 +29,19 @@ function onMobileMenuLincClick(ev) {
 modalFormBtn.addEventListener("click", onModalFormBtn);
 function onModalFormBtn() {
   modalFormOpen();
+  bodyScrollLock();
 }
 
 modalCloseBtn.addEventListener("click", onModalCloseBtn);
 function onModalCloseBtn() {
   modalFormClose();
+  bodyScrollLock();
 }
 
 modalPriceFormBtn.addEventListener("click", onModalPriceFormBtn);
 function onModalPriceFormBtn() {
   modalFormOpen();
+  bodyScrollLock();
 }
 // ---
 
@@ -47,6 +50,12 @@ function onRentFormBtn(e) {
   e.preventDefault();
   rentForm.reset();
   modalFormClose();
+  bodyScrollLock();
+}
+
+// ----
+function bodyScrollLock() {
+  document.body.classList.toggle("scroll-lock");
 }
 
 //-----

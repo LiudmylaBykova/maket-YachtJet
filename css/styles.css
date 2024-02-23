@@ -4,6 +4,10 @@ body {
     background-color: #0E1823;
 }
 
+body.scroll-lock {
+    overflow: hidden;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -1228,7 +1232,8 @@ p {
 
 
     .header-hero-wrap {
-        max-width: 1280px;
+        min-width: 1280px;
+        max-width: 1440px;
         height: 800px;
         background-image: url(../img/hero/hero-desc.jpg);
     }
